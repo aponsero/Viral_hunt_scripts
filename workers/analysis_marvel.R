@@ -26,6 +26,6 @@ for (f in reports){
 
 #export conversion
     out_file<-paster("res_", con_file, sep = ".", collapse = NULL)
-    write.csv(data, out_file, row_names=FALSE)
+    write.csv(data, out_file, row.names=FALSE)
 }
 
