@@ -20,4 +20,4 @@ for d in */ ; do
 done
 
 module load R
-Rscript map_names.R $OUT $MAP
+Rscript analysis_marvel.R $OUT $MAP
