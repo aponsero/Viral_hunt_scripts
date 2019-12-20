@@ -6,7 +6,7 @@ DATASET="/Users/aponsero/Documents/UA_POSTDOC/projects/Nostoc_project/Lichen_met
 
 
 OUT="$DIR/results"
-CONTIGS="$DIR/viral_contigs"
+mkdir $OUT
 P_VALUE="0.96"
 MIN_LENGTH="500"
 
@@ -28,7 +28,7 @@ do
         SHORT=($(echo "$name" | tr ' ' '\n'))                
         NAME=${SHORT:1}
         echo $NAME
-        grep -w -A1 $NAME $FILE >> SELECT_CONTIGS
+        grep -w -A1 $NAME $FILE >> $SELECT_CONTIGS
     done < $f
 done
 
