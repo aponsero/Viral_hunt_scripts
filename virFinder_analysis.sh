@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Path to result directory containing files
-DIR="/Users/aponsero/Documents/UA_POSTDOC/projects/Nostoc_project/Lichen_meta/exp2_Viral_search/VirFinder_default"
+DIR="/Users/aponsero/Documents/UA_POSTDOC/projects/Nostoc_project/Lichen_meta/exp2_Viral_search/VirFinder_modC3"
 DATASET="/Users/aponsero/Documents/UA_POSTDOC/projects/Nostoc_project/Lichen_meta/exp2_Viral_search/dataset1"
 
 
@@ -11,7 +11,7 @@ P_VALUE="0.96"
 MIN_LENGTH="500"
 
 #select contigs and print a res_ file in DIR
-#Rscript workers/analysis_virFinder.R $DIR $DATASET $P_VALUE $MIN_LENGTH
+Rscript workers/analysis_virFinder.R $DIR $DATASET $P_VALUE $MIN_LENGTH
 #get contig sequences from the selection
 
 cd $DIR
